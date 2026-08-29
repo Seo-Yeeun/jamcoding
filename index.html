@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TXT Fan Page | Tomorrow X Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="access-loading">
+    <div id="system-loader" aria-live="polite">
+        <div class="loader-mark">TXT / SYSTEM</div>
+        <div id="loader-message">INITIALIZING...</div>
+        <div class="loader-tracks" aria-label="TXT 데이터 초기화 진행 상황">
+            <div class="loader-track" data-loader-track="members"><span>MEMBERS</span><b><i></i></b></div>
+            <div class="loader-track" data-loader-track="timeline"><span>TIMELINE</span><b><i></i></b></div>
+            <div class="loader-track" data-loader-track="media"><span>MEDIA</span><b><i></i></b></div>
+        </div>
+        <div class="loader-status" id="loader-status">연결 대기 중...</div>
+        <div class="loader-progress"><i></i></div>
+    </div>
+
+    <div class="container access-shell">
+        <header class="access-header">
+            <a class="access-wordmark" href="#home">TXT / ACCESS</a>
+            <span class="access-counter">DIGITAL SPACE FOR TOMORROW X TOGETHER</span>
+        </header>
+
+        <main id="home">
+            <section id="entry-screen" class="entry-screen" aria-labelledby="entry-title">
+                <p class="entry-kicker">TXT / ACCESS · MOA ARCHIVE</p>
+                <h1 id="entry-title">TOMORROW X TOGETHER</h1>
+                <div class="signature-field" aria-label="멤버 프로필 선택">
+                    <button class="signature-button signature-yeonjun" type="button" data-member-id="m_yeon_jun" aria-label="연준 프로필 보기">
+                        <img src="https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%97%B0%EC%A4%80%20%EC%8B%B8%EC%9D%B8.svg" alt="연준 사인" onerror="this.hidden=true;this.parentElement.classList.add('sign-missing')">
+                        <span class="sign-fallback">YEONJUN</span><span class="signature-label">YEONJUN<small>01 / MEMBER</small><small>VIEW →</small></span>
+                    </button>
+                    <button class="signature-button signature-soobin" type="button" data-member-id="m_soo_bin" aria-label="수빈 프로필 보기">
+                        <img src="https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%88%98%EB%B9%88%20%EC%8B%B8%EC%9D%B8.svg" alt="수빈 사인" onerror="this.hidden=true;this.parentElement.classList.add('sign-missing')">
+                        <span class="sign-fallback">SOOBIN</span><span class="signature-label">SOOBIN<small>01 / MEMBER</small><small>VIEW →</small></span>
+                    </button>
+                    <button class="signature-button signature-beomgyu" type="button" data-member-id="m_beom_gyu" aria-label="범규 프로필 보기">
+                        <img src="https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EB%B2%94%EA%B7%9C%20%EC%8B%B8%EC%9D%B8.svg" alt="범규 사인" onerror="this.hidden=true;this.parentElement.classList.add('sign-missing')">
+                        <span class="sign-fallback">BEOMGYU</span><span class="signature-label">BEOMGYU<small>01 / MEMBER</small><small>VIEW →</small></span>
+                    </button>
+                    <button class="signature-button signature-taehyun" type="button" data-member-id="m_tae_hyun" aria-label="태현 프로필 보기">
+                        <img src="https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%83%9C%ED%98%84%20%EC%8B%B8%EC%9D%B8.svg" alt="태현 사인" onerror="this.hidden=true;this.parentElement.classList.add('sign-missing')">
+                        <span class="sign-fallback">TAEHYUN</span><span class="signature-label">TAEHYUN<small>01 / MEMBER</small><small>VIEW →</small></span>
+                    </button>
+                    <button class="signature-button signature-hueningkai" type="button" data-member-id="m_hu_ning" aria-label="휴닝카이 프로필 보기">
+                        <img src="https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%9C%B4%EB%8B%9D%EC%B9%B4%EC%9D%B4%20%EC%8B%B8%EC%9D%B8.svg" alt="휴닝카이 사인" onerror="this.hidden=true;this.parentElement.classList.add('sign-missing')">
+                        <span class="sign-fallback">HUENINGKAI</span><span class="signature-label">HUENINGKAI<small>01 / MEMBER</small><small>VIEW →</small></span>
+                    </button>
+                </div>
+                <section class="entry-group-intro" aria-labelledby="entry-group-title">
+                    <div class="entry-group-heading">
+                        <span>TXT / GROUP NOTE</span>
+                        <h2 id="entry-group-title">다섯 명이 하나의 내일을 만드는 팀</h2>
+                    </div>
+                    <div class="entry-group-copy">
+                        <p class="entry-group-lead">서로 다른 너와 내가 하나의 꿈으로 모여 함께 내일을 만들어간다는 의미를 담은 팀이야.</p>
+                        <p>TXT는 청춘의 설렘과 성장, 꿈과 현실 사이의 이야기를 음악과 퍼포먼스로 이어가. 다섯 멤버는 각자의 색을 가지고 있지만, 함께 있을 때 하나의 장면과 하나의 내일을 만들어내지.</p>
+                        <p>위에 흩어진 사인은 멤버를 발견하는 첫 번째 인터페이스야. 사인에 마우스를 올리면 이름과 역할이 드러나고, 눌러 보면 멤버의 이야기로 바로 들어갈 수 있어. 사인을 모두 살펴본 뒤 아래 아카이브에서 멤버·음악·미디어를 차례로 이어서 탐색해 봐.</p>
+                    </div>
+                    <div class="entry-group-facts" aria-label="TXT 그룹 정보">
+                        <span><b>2019.03.04</b> DEBUT</span>
+                        <span><b>05</b> MEMBERS</span>
+                        <span><b>MOA</b> MOMENTS OF ALWAYSNESS</span>
+                    </div>
+                    <div class="entry-group-index" aria-label="아카이브 탐색 순서">
+                        <span><b>01</b> SIGNATURES / 멤버 발견</span>
+                        <span><b>02</b> ARCHIVE / 음악과 미디어</span>
+                    </div>
+                </section>
+                <button class="entry-enter" type="button">↓ ENTER ARCHIVE</button>
+            </section>
+            <div class="access-home">
+            <nav class="access-menu" aria-label="TXT 콘텐츠 메뉴">
+                <button data-access="members">05&nbsp; MEMBERS</button>
+                <button data-access="albums">13&nbsp; ALBUMS</button>
+                <button data-access="videos">31&nbsp; VIDEOS</button>
+            </nav>
+            <section class="scrapbook-stage" aria-labelledby="access-title">
+                <p class="stage-kicker">WELCOME, MOA. / CONNECTION ESTABLISHED</p>
+                <figure class="stage-photo"><img id="home-photo" alt="TXT 단체사진"></figure>
+                <div class="stage-stats" aria-label="아카이브 콘텐츠 바로가기">
+                    <button class="stage-stat" type="button" data-access="members"><b>05</b> MEMBERS<span>멤버 탐색 →</span></button>
+                    <button class="stage-stat" type="button" data-access="albums"><b>13</b> ALBUMS<span>앨범 표지 보기 →</span></button>
+                    <button class="stage-stat" type="button" data-access="videos"><b>31</b> VIDEOS<span>영상 목록 보기 →</span></button>
+                </div>
+                <button class="scroll-cue" data-access="members">SCROLL TO EXPLORE ↓</button>
+
+            </section>
+            <section id="content-area" class="access-content" aria-live="polite"></section>
+        </main>
+
+        <footer>
+            <p>⚠️ 본 페이지는 학습용 데모입니다.<br>앨범 커버 및 아티스트 이미지의 저작권은 HYBE/BIGHIT MUSIC 및 원작자에게 있습니다.<br>학생이 제공한 외부 이미지 링크는 공식 이미지 핫링크/CORS 정책에 따라 표시가 막힐 수 있으니 배포 전 직접 확인해 주세요.</p>
+            <details class="image-source-list">
+                <summary>나무위키 이미지 주소 목록 보기</summary>
+                <p class="image-source-note">코드에 삽입된 외부 이미지 주소를 설명과 함께 정리한 목록이야.</p>
+                <ul id="namu-image-list"></ul>
+            </details>
+        </footer>
+    </div>
+
+    <!-- 이미지 확대 모달 -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Expanded View">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
