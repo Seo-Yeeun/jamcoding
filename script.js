@@ -1,11 +1,11 @@
-// 최신 검증된 링크 기반 Mock Data (ID Schema 적용)
+// 저장소에 포함된 이미지 파일 기반 Mock Data (ID Schema 적용)
 const MOCK_DB = {
     members: [
         { 
             id: 'm_soo_bin', 
             name: '최수빈 (SOOBIN)', 
             role: '리더 / 보컬', 
-            image_key: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%B5%9C%EC%88%98%EB%B9%88%28SOOBIN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+            image_key: 'cover_member_soobin_v1',
             details: {
                 group: '투모로우바이투게더 (빅히트 뮤직)',
                 height: '186cm (팀 내 최장신)',
@@ -33,7 +33,7 @@ const MOCK_DB = {
             id: 'm_yeon_jun', 
             name: '최연준 (YEONJUN)', 
             role: '맏형 / 메인댄서 / 보컬·랩', 
-            image_key: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%B5%9C%EC%97%B0%EC%A4%80%20%28YEONJUN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+            image_key: 'cover_member_yeonjun_v1',
             details: {
                 group: '투모로우바이투게더 (빅히트 뮤직)',
                 height: '181.5cm',
@@ -227,32 +227,34 @@ const MOCK_DB = {
 };
 
 const COVER_IMAGE_URLS = {
-    cover_a_reg_1: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%BF%88%EC%9D%98%20%EC%9E%A5%20MAGIC%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_reg_2: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%98%BC%EB%8F%88%EC%9D%98%20%EC%9E%A5%20FREEZE%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_reg_2_rep: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%98%BC%EB%8F%88%EC%9D%98%20%EC%9E%A5%20FIGHT%20OR%20ESCAPE%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_reg_3: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%9D%B4%EB%A6%84%EC%9D%98%20%EC%9E%A5%20FREEFALL%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_reg_4: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EB%B3%84%EC%9D%98%20%EC%9E%A5%20TOGETHER%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_1: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%BF%88%EC%9D%98%20%EC%9E%A5%20STAR%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_2: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%BF%88%EC%9D%98%20%EC%9E%A5%20ETERNITY%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_3: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/minisode1%20BLUE%20HOUR%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_4: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/minisode%202%20Thursday%27s%20Child%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_5: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%9D%B4%EB%A6%84%EC%9D%98%20%EC%9E%A5%20TEMPTATION%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_6: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/minisode%203%20TOMORROW%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_7: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EB%B3%84%EC%9D%98%20%EC%9E%A5%20SANCTUARY%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_a_mini_8: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/7TH%20YEAR%20%EA%B0%80%EC%8B%9C%EB%8D%A4%EB%B8%94%EC%97%90%20%EC%9E%A0%EC%8B%9C%20%EB%B0%94%EC%9D%B4%20%EB%A9%88%EC%8C%BC%EC%9D%84%20%EB%95%B4%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp',
-    cover_member_beomgyu_v2: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%B5%9C%EB%B2%94%EA%B7%9C%20%28BEOMGYU%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
-    cover_member_taehyun_v1: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%B0%95%ED%83%9C%ED%98%84%20%28TAEHYUN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
-    cover_member_hueningkai_v1: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%9C%B4%EB%8B%9D%EC%B9%B4%EC%9D%B4%20%28HUENINGKAI%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
-    image_key_txt_group_photo_v1: 'https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%88%AC%EB%AA%A8%EB%A1%9C%EC%9A%B0%EB%B0%94%EC%9D%B4%ED%88%AC%EA%B2%8C%EB%8D%94%20%28TOMORROW%20X%20TOGETHER%2C%20TXT%29%20%EB%8B%A8%EC%B2%B4%EC%82%AC%EC%A7%84.webp'
+    cover_a_reg_1: './%EA%BF%88%EC%9D%98%20%EC%9E%A5%20MAGIC%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_reg_2: './%ED%98%BC%EB%8F%88%EC%9D%98%20%EC%9E%A5%20FREEZE%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_reg_2_rep: './%ED%98%BC%EB%8F%88%EC%9D%98%20%EC%9E%A5%20FIGHT%20OR%20ESCAPE%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_reg_3: './%EC%9D%B4%EB%A6%84%EC%9D%98%20%EC%9E%A5%20FREEFALL%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_reg_4: './%EB%B3%84%EC%9D%98%20%EC%9E%A5%20TOGETHER%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_1: './%EA%BF%88%EC%9D%98%20%EC%9E%A5%20STAR%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_2: './%EA%BF%88%EC%9D%98%20%EC%9E%A5%20ETERNITY%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_3: './minisode1%20BLUE%20HOUR%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_4: './minisode%202%20Thursday%27s%20Child%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_5: './%EC%9D%B4%EB%A6%84%EC%9D%98%20%EC%9E%A5%20TEMPTATION%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_6: './minisode%203%20TOMORROW%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_7: './%EB%B3%84%EC%9D%98%20%EC%9E%A5%20SANCTUARY%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_a_mini_8: './7TH%20YEAR%20%EA%B0%80%EC%8B%9C%EB%8D%A4%EB%B6%88%EC%97%90%20%EC%9E%A0%EC%8B%9C%20%EB%B0%94%EB%9E%8C%EC%9D%B4%20%EB%A9%88%EC%B7%84%EC%9D%84%20%EB%95%8C%20%EC%95%A8%EB%B2%94%20%ED%91%9C%EC%A7%80.webp',
+    cover_member_soobin_v1: './%EC%B5%9C%EC%88%98%EB%B9%88%28SOOBIN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+    cover_member_yeonjun_v1: './%EC%B5%9C%EC%97%B0%EC%A4%80%20%28YEONJUN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+    cover_member_beomgyu_v2: './%EC%B5%9C%EB%B2%94%EA%B7%9C%20%28BEOMGYU%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+    cover_member_taehyun_v1: './%EA%B0%95%ED%83%9C%ED%98%84%20%28TAEHYUN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+    cover_member_hueningkai_v1: './%ED%9C%B4%EB%8B%9D%EC%B9%B4%EC%9D%B4%20%28HUENINGKAI%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp',
+    image_key_txt_group_photo_v1: './%ED%88%AC%EB%AA%A8%EB%A1%9C%EC%9A%B0%EB%B0%94%EC%9D%B4%ED%88%AC%EA%B2%8C%EB%8D%94%20%28TOMORROW%20X%20TOGETHER%2C%20TXT%29%20%EB%8B%A8%EC%B2%B4%EC%82%AC%EC%A7%84.webp'
 };
 
-// 제공된 raw URL만 직접 사용합니다.
+// GitHub Pages의 프로젝트 하위 경로에서도 동작하도록 문서 기준 상대 주소를 사용합니다.
 function getImageSrc(imageKey) {
     if (!imageKey) return '';
     return COVER_IMAGE_URLS[imageKey] || imageKey;
 }
 
-// 외부 이미지 서버의 hotlink·Referer·차단 실패가 전체 레이아웃을 깨뜨리지 않게 처리합니다.
+// 이미지 파일 로드 실패가 전체 레이아웃을 깨뜨리지 않게 처리합니다.
 document.addEventListener('error', (event) => {
     const image = event.target;
     if (!(image instanceof HTMLImageElement)) return;
@@ -835,20 +837,20 @@ function enterAccess(memberId = '', targetCategory = '') {
         setTimeout(() => openMemberDetailModal(member), 650);
     }
 }
-function renderNamuImageList() {
-    const list = document.getElementById('namu-image-list');
+function renderImageList() {
+    const list = document.getElementById('image-file-list');
     if (!list) return;
 
     const pairs = [];
     const seen = new Set();
     const addPair = (description, url) => {
-        if (!url || !url.includes('raw.githubusercontent.com')) return;
+        if (!url || !url.startsWith('./')) return;
         if (seen.has(url)) return;
         seen.add(url);
         pairs.push({ description, url });
     };
 
-    document.querySelectorAll('img[src*="raw.githubusercontent.com"]').forEach(image => {
+    document.querySelectorAll('img[src^="./"]').forEach(image => {
         addPair(image.alt || '코드에 삽입된 이미지', image.getAttribute('src'));
     });
 
@@ -880,7 +882,7 @@ function renderNamuImageList() {
 }
 
 function initAccess() {
-    renderNamuImageList();
+    renderImageList();
     const photo = document.getElementById('home-photo');
     if (photo && MOCK_DB.groups[0]) {
         const photoFrame = photo.closest('.stage-photo');

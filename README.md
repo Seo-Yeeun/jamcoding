@@ -1,24 +1,17 @@
-7TH YEAR 가시덤불에 잠시 바람이 멈췄을 때 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/7TH%20YEAR%20%EA%B0%80%EC%8B%9C%EB%8D%A4%EB%B8%94%EC%97%90%20%EC%9E%A0%EC%8B%9C%20%EB%B0%94%EC%9D%B4%20%EB%A9%88%EC%8C%BC%EC%9D%84%20%EB%95%B4%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-minisode 2 Thursday's Child 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/minisode%202%20Thursday%27s%20Child%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-minisode 3 TOMORROW 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/minisode%203%20TOMORROW%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-minisode1 BLUE HOUR 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/minisode1%20BLUE%20HOUR%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-강태현 (TAEHYUN) 이미지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%B0%95%ED%83%9C%ED%98%84%20%28TAEHYUN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp
-꿈의 장 ETERNITY 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%BF%88%EC%9D%98%20%EC%9E%A5%20ETERNITY%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-꿈의 장 MAGIC 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%BF%88%EC%9D%98%20%EC%9E%A5%20MAGIC%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-꿈의 장 STAR 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EA%BF%88%EC%9D%98%20%EC%9E%A5%20STAR%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-범규 싸인.svg: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EB%B2%94%EA%B7%9C%20%EC%8B%B8%EC%9D%B8.svg
-별의 장 SANCTUARY 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EB%B3%84%EC%9D%98%20%EC%9E%A5%20SANCTUARY%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-별의 장 TOGETHER 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EB%B3%84%EC%9D%98%20%EC%9E%A5%20TOGETHER%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-수빈 싸인.svg: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%88%98%EB%B9%88%20%EC%8B%B8%EC%9D%B8.svg
-연준 싸인.svg: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%97%B0%EC%A4%80%20%EC%8B%B8%EC%9D%B8.svg
-이름의 장 FREEFALL 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%9D%B4%EB%A6%84%EC%9D%98%20%EC%9E%A5%20FREEFALL%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-이름의 장 TEMPTATION 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%9D%B4%EB%A6%84%EC%9D%98%20%EC%9E%A5%20TEMPTATION%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-최범규 (BEOMGYU) 이미지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%B5%9C%EB%B2%94%EA%B7%9C%20%28BEOMGYU%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp
-최수빈(SOOBIN) 이미지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%B5%9C%EC%88%98%EB%B9%88%28SOOBIN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp
-최연준 (YEONJUN) 이미지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%EC%B5%9C%EC%97%B0%EC%A4%80%20%28YEONJUN%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp
-태현 싸인.svg: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%83%9C%ED%98%84%20%EC%8B%B8%EC%9D%B8.svg
-투모로우바이투게더 (TOMORROW X TOGETHER, TXT) 단체사진.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%88%AC%EB%AA%A8%EB%A1%9C%EC%9A%B0%EB%B0%94%EC%9D%B4%ED%88%AC%EA%B2%8C%EB%8D%94%20%28TOMORROW%20X%20TOGETHER%2C%20TXT%29%20%EB%8B%A8%EC%B2%B4%EC%82%AC%EC%A7%84.webp
-혼돈의 장 FIGHT OR ESCAPE 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%98%BC%EB%8F%88%EC%9D%98%20%EC%9E%A5%20FIGHT%20OR%20ESCAPE%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-혼돈의 장 FREEZE 앨범 표지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%98%BC%EB%8F%88%EC%9D%98%20%EC%9E%A5%20FREEZE%20%EC%95%A0%EB%B2%8C%20%ED%91%9C%EC%A7%80.webp
-휴닝카이 (HUENINGKAI) 이미지.webp: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%9C%B4%EB%8B%9D%EC%B9%B4%EC%9D%B4%20%28HUENINGKAI%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.webp
-휴닝카이 싸인.svg: https://raw.githubusercontent.com/Seo-Yeeun/jamcoding/e18200b7705357cfec744375860ea23155c5b60b/%ED%9C%B4%EB%8B%9D%EC%B9%B4%EC%9D%B4%20%EC%8B%B8%EC%9D%B8.svg
+# TXT Fan Page
+
+투모로우바이투게더 멤버, 앨범, 영상을 한 화면에서 둘러보는 정적 팬 페이지입니다.
+
+## 실행
+
+별도 빌드 과정 없이 정적 파일 서버로 저장소 루트를 열면 됩니다.
+
+```sh
+python3 -m http.server 8000
+```
+
+브라우저에서 `http://localhost:8000`으로 접속하세요.
+
+## 이미지 경로
+
+페이지의 멤버 사진, 단체 사진, 앨범 표지, 사인 이미지는 모두 저장소 루트에 포함되어 있습니다. `index.html`과 `script.js`에서는 GitHub Pages의 프로젝트 하위 경로에서도 동작하도록 문서 기준 상대 주소를 사용합니다.

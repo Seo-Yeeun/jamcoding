@@ -2768,7 +2768,7 @@ body.entry-entered .access-home { opacity:1; visibility:visible; height:auto; ov
     min-height: 72px;
 }
 
-/* 코드에 사용된 나무위키 이미지 주소를 확인할 수 있는 출처 목록 */
+/* 코드에 사용된 저장소 이미지 주소를 확인할 수 있는 파일 목록 */
 .image-source-list {
     margin-top: 1.5rem;
     border-top: 1px solid rgba(23, 35, 63, .25);
@@ -2789,19 +2789,19 @@ body.entry-entered .access-home { opacity:1; visibility:visible; height:auto; ov
     font-size: .76rem;
 }
 
-#namu-image-list {
+#image-file-list {
     display: grid;
     gap: .7rem;
     padding-left: 1.2rem;
 }
 
-#namu-image-list li {
+#image-file-list li {
     color: #46516b;
     font: .7rem/1.55 'Space Grotesk', 'Noto Sans KR', sans-serif;
     overflow-wrap: anywhere;
 }
 
-#namu-image-list li strong {
+#image-file-list li strong {
     color: var(--ink);
 }
 
