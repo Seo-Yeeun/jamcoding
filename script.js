@@ -403,7 +403,6 @@ function renderContent(category) {
                     <div class="group-card-tags">${item.keywords.slice(0, 6).map(keyword => `<span>#${keyword}</span>`).join('')}</div>
                     <div class="group-members-inline"><strong>멤버</strong>${memberNames}</div>
                     <div class="group-details-inline">${groupDetailsHtml}</div>
-                    <p class="group-source-note">학습용 데모 콘텐츠이며, 이미지·미디어의 저작권은 원작자와 소속사에 있습니다. 외부 미디어는 핫링크/CORS 정책에 따라 표시가 제한될 수 있습니다.</p>
                 `;
             } else if (category === 'albums') {
                 card.className = 'album-item';
@@ -480,7 +479,7 @@ function renderContinuousContent() {
         }
         contentArea = sections[index].querySelector('.section-content');
         if (categories[index][0] === 'albums') {
-            renderAccessTimeline(contentArea);
+            renderAccessTimeline(contentArea, false);
         } else {
             renderContent(categories[index][0]);
         }
@@ -592,7 +591,6 @@ function openGroupDetailModal(group) {
             <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem;">${membersHtml}</div>
             ${attributeHtml}
             <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:1rem; color:var(--text-sub); font-size:0.85rem;">핵심 키워드 · ${group.keywords.join(' · ')}</div>
-            <p style="color:var(--text-sub); font-size:0.75rem; margin-top:1rem;">학습용 데모 콘텐츠이며, 관련 이미지·미디어의 저작권은 원작자와 소속사에 있습니다. 외부 미디어는 핫링크/CORS 정책에 따라 표시가 제한될 수 있습니다.</p>
         </div>`;
     setupModalCloseEvents();
     modal.querySelectorAll('.group-member-link').forEach(button => {
@@ -734,20 +732,29 @@ function renderInteractiveTimeline(root) {
     });
 }
 
-function renderAccessTimeline(root) {
+function renderAccessTimeline(root, includeHeading = true) {
     const entries = [...MOCK_DB.albums].sort((a, b) => a.release_date.localeCompare(b.release_date));
-    root.innerHTML = `<div class="access-section-title"><h2>ALBUMS</h2><p>${entries.length}개 앨범 · 표지를 선택하면 발매일과 트랙리스트를 볼 수 있어</p></div><div class="access-album-grid" aria-label="TXT 앨범 목록"></div>`;
+    const heading = includeHeading
+        ? `<div class="access-section-title"><h2>ALBUMS</h2><p>${entries.length}개 앨범 · 표지를 선택하면 발매일과 트랙리스트를 볼 수 있어</p></div>`
+        : '';
+    root.innerHTML = `${heading}<div class="access-album-grid" aria-label="TXT 앨범 목록"></div>`;
     const grid = root.querySelector('.access-album-grid');
 
-    entries.forEach(item => {
+    entries.forEach((item, index) => {
         const album = document.createElement('button');
         const coverSrc = getImageSrc(item.cover_image_key);
         album.type = 'button';
         album.className = 'access-album-tile';
         album.setAttribute('aria-label', `${item.title} 앨범 상세 보기`);
         album.innerHTML = `
-            ${coverSrc ? `<img src="${coverSrc}" alt="${item.title} 표지" loading="lazy" referrerpolicy="no-referrer">` : '<span class="access-album-cover-fallback" aria-hidden="true">TXT</span>'}
-            <strong>${item.title}</strong>
+            <span class="access-album-cover">
+                ${coverSrc ? `<img src="${coverSrc}" alt="${item.title} 표지" loading="lazy" referrerpolicy="no-referrer">` : '<span class="access-album-cover-fallback" aria-hidden="true">TXT</span>'}
+                <span class="access-album-index" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span>
+            </span>
+            <span class="access-album-copy">
+                <strong>${item.title}</strong>
+                <span>${item.release_date} · ${item.tracks.length} TRACKS</span>
+            </span>
         `;
         album.addEventListener('click', () => openAlbumDetailModal(item));
         grid.appendChild(album);
@@ -837,52 +844,7 @@ function enterAccess(memberId = '', targetCategory = '') {
         setTimeout(() => openMemberDetailModal(member), 650);
     }
 }
-function renderImageList() {
-    const list = document.getElementById('image-file-list');
-    if (!list) return;
-
-    const pairs = [];
-    const seen = new Set();
-    const addPair = (description, url) => {
-        if (!url || !url.startsWith('./')) return;
-        if (seen.has(url)) return;
-        seen.add(url);
-        pairs.push({ description, url });
-    };
-
-    document.querySelectorAll('img[src^="./"]').forEach(image => {
-        addPair(image.alt || '코드에 삽입된 이미지', image.getAttribute('src'));
-    });
-
-    MOCK_DB.members.forEach(member => {
-        addPair(`${member.name} 이미지`, getImageSrc(member.image_key));
-    });
-    MOCK_DB.groups.forEach(group => {
-        addPair(`${group.name} 단체사진`, getImageSrc(group.image_key));
-    });
-    MOCK_DB.albums.forEach(album => {
-        addPair(`${album.title} 앨범 표지`, getImageSrc(album.cover_image_key));
-    });
-
-    Object.entries(COVER_IMAGE_URLS).forEach(([key, url]) => {
-        const album = MOCK_DB.albums.find(item => item.cover_image_key === key);
-        const member = MOCK_DB.members.find(item => item.image_key === key);
-        const description = album ? `${album.title} 앨범 표지` : member ? `${member.name} 이미지` : `${key} 이미지`;
-        addPair(description, url);
-    });
-
-    list.innerHTML = '';
-    pairs.forEach(({ description, url }) => {
-        const item = document.createElement('li');
-        const label = document.createElement('strong');
-        label.textContent = `${description}: `;
-        item.append(label, document.createTextNode(url));
-        list.appendChild(item);
-    });
-}
-
 function initAccess() {
-    renderImageList();
     const photo = document.getElementById('home-photo');
     if (photo && MOCK_DB.groups[0]) {
         const photoFrame = photo.closest('.stage-photo');
